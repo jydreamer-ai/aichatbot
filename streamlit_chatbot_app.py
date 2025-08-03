@@ -5,7 +5,7 @@
 
 import time
 import streamlit as st
-from openai import OpenAI
+# from openai import OpenAI
 import requests
 
 # Website config
@@ -108,3 +108,4 @@ if prompt := st.chat_input("Type something or type 'exit' to end... "):
                 st.session_state.messages.append({"role": "assistant", "content": response})
             except Exception as e:
                 st.error(f"An error occurred: {str(e)}")
+
